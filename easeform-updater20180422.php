@@ -1,5 +1,5 @@
 <?php
-    $updateavailable = null;
+    $updateavailable = 1;
 
     if ($updateavailable == 1) {
     ?>
