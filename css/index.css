@@ -26,6 +26,7 @@ body, input, button {
 .span-40px {height:40px}
 .min-480 {display:none}
 .min-720 {display:none}
+.min-1024 {display:none}
 
 #container {
     grid-template-columns:90px auto;
@@ -100,6 +101,24 @@ body, input, button {
     text-align:center;
     font-weight:700;
     font-size:14px;
+}
+
+.nav-selected img {
+    filter: invert(17%) sepia(89%) saturate(3273%) hue-rotate(194deg) brightness(91%) contrast(101%);
+    -webkit-filter: invert(17%) sepia(89%) saturate(3273%) hue-rotate(194deg) brightness(91%) contrast(101%);
+}
+
+.nav-selected p {
+    color:#005aa3;
+}
+
+.nav-selected-index img {
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(0,90,163,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(0,90,163,1);
+    box-shadow: 0px 0px 0px 2px rgba(0,90,163,1);
+}
+.nav-selected-index p {
+    color:#005aa3;
 }
 
 @media only screen and (max-width: 600px) {
@@ -239,7 +258,7 @@ body, input, button {
 
 #content-now-main li, #content-now-main p {
     font-size:18px;
-    line-height:22px;
+    line-height:24px;
 }
 
 .content-now-header {
@@ -257,17 +276,11 @@ body, input, button {
 }
 
 #contact-messenger {
-    width:512px;
+    width:auto;
     height:auto;
     border-radius:8px;
     border:1px solid #0084FF;
     transition:0.3s;
-}
-
-@media only screen and (max-width: 600px) {
-    #contact-messenger {
-        width:auto;
-    }
 }
 
 #contact-messenger p {
@@ -278,6 +291,7 @@ body, input, button {
     color:#0084FF;
     text-align:center;
     transition:0.3s;
+    line-height:24px;
 }
 
 #contact-messenger:hover, #contact-messenger:focus {
@@ -319,6 +333,10 @@ body, input, button {
     margin:24px;
 }
 
+#content-about-main-grid {
+    grid-template-columns:auto 300px;
+    grid-gap:32px;
+}
 #content-about h2 {
     font-size:36px;
 }
@@ -326,17 +344,15 @@ body, input, button {
 .content-about-block {
     background-color:#eeeeee;
     border-radius:10px;
-    width:640px;
+    width:auto;
     height:auto;
     margin-top:10px;
     margin-bottom:10px;
+    border:1px solid #ddd;
+    transition:0.3s;
 }
 
-@media only screen and (max-width: 600px) {
-    .content-about-block {
-        width:auto;
-    }
-}
+
 
 .content-about-grid {
     grid-template-columns:64px auto;
@@ -350,22 +366,18 @@ body, input, button {
 }
 
 .content-about-grid h3 {
-    font-size:28px;
-    line-height:32px;
+    font-size:24px;
+    line-height:24px;
 }
 
 .gold-bg {
     background-color:#ffdf74;
 }
 
-@media only screen and (max-width: 600px) {
-
-    #content-work, #content-container /*content-index*/, #content-now, #content-about {
-        height:calc(100vh - 84px);
-    }
+.content-about-info-grid {
+    grid-template-columns:49% 49%;
+    grid-gap:2%;
 }
-
-
 
 #content-work-margin {
     margin:24px;
@@ -392,15 +404,42 @@ body, input, button {
         grid-template-columns:49% 49%;
         grid-gap:2%;
     }
+    .content-about-info-grid {
+        grid-template-columns:auto;
+    }
 }
 
+@media only screen and (max-width:1024px) {
+    #content-about-main-grid {
+        grid-template-columns:auto;
+        grid-template-rows:auto;
+    }
+    .content-about-info-grid {
+        grid-template-columns:49% 49%;
+        grid-gap:2%;
+    }
+    .min-1024 {display:block}
+    
+}
+@media only screen and (max-width:854px) {
+    .content-about-info-grid {
+        grid-template-columns:auto;
+    }
+}
 @media only screen and (max-width: 720px) {
     .content-work-grid {
         grid-template-columns:100%;
         grid-gap:2%;
     }
-
+    
     .min-720 {display:block}
+}
+
+@media only screen and (max-width: 600px) {
+    #content-work, #content-container /*content-index*/, #content-now, #content-about {
+        height:calc(100vh - 84px);
+    }
+    
 }
 
 .content-work-grid a {
@@ -417,7 +456,7 @@ body, input, button {
     transition:0.3s;
 }
 
-.work-info:hover, .work-info:focus {
+.work-info:hover, .work-info:focus, .content-about-block:hover, .content-about-block:focus {
     transform:scale(1.025);
     transition:0.3s;
     border:1px solid #999;
@@ -470,4 +509,18 @@ body, input, button {
 
 .h3-header p:hover, .h3-header p:focus {
     color:rgb(0, 98, 211);
+}
+
+#content-now-text ul {
+    padding-left:20px;
+}
+
+.li-1 {
+    line-height:24px;
+    font-size:18px;
+}
+
+.li-2 {
+    line-height:24px;
+    font-size:16px;
 }
