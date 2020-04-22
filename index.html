@@ -1,230 +1,458 @@
-<html>
-    <head>
-        <title>cyboryan</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/resetter.css">
-        <link rel='stylesheet' type='text/css' href='assets/css/index.css'>
-    </head>
-    <body class='block'>
-        <!--<div id='navigation' class='absolute block'>
-            <p class='text-small-gray' style='margin-bottom:8px;margin-left:8px;margin-top:8px;'>NAVIGATION</p>
-            <ul class='menu'>
-                <li class='menu-button'><a href='#about'>About</a></li>
-                <li class='menu-button'><a href='#binaybayon'><b>#Binaybayon2019</b></a></li class='menu-button'>
-                <li class='menu-button'><a href='#services'>Services</a></li class='menu-button'>
-                <li class='menu-button'><a href='#portfolio'>Portfolio</a></li>
-            </ul>
-        </div>-->
-        <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v5.0'
-          });
-        };
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+<!DOCTYPE html>
+<html lang="en">
 
-      <!-- Your customer chat code -->
-      <div class="fb-customerchat"
-           attribution=setup_tool
-           page_id="1486462188351193"
-           logged_in_greeting="Hi! How can I help you?"
-           logged_out_greeting="Hi! How can I help you?">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>cyboryan</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">cyboryan</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
       </div>
-        
-        
-        <div id='main' class='grid'>
-            <div id='side-photo' style='width:auto;height:100vh;background-color:#333;'></div>
-            <div id='side-content' style='width:auto;height:100vh;overflow-y:scroll;'>
-                <div id='about' style='width:calc(100vw - 529px)' class='table'>
-                    <div class='vertical-center' style='padding:36px'>
-                        <img style='width:128px;height:128px;margin-bottom:16px;border-radius:1000px;' src='assets/img/logo.jpg'>
-                        <h1>Graeme Xyber Pastoril</h1>
-                        <p>Also known as <b>'cyboryan'</b>, one of the tech-nerds from Leyte</p>
-                        <div id='about-organized-summary'>
-                            <div class='grid summary'>
-                                <img src='assets/img/vsu.png'>
-                                <div>
-                                    <p class='text-small-gray' style='margin-bottom:4px;'>CURRENTLY STUDYING AT</p>
-                                    <h2>Visayas State University</h2>
-                                    <p class='text-small-gray'>Bachelor of Science in Computer Science</p>
-                                </div>
-                            </div>
-                            <div class='grid summary'>
-                                <img src='assets/img/code.jpg'>
-                                <div>
-                                    <p class='text-small-gray' style='margin-bottom:4px;'>KNOWLEDGABLE IN</p>
-                                    <h2>Web Development</h2>
-                                    <p class='text-small-gray'>Focusing on PHP7/MySQL with HTML5 & CSS3</p>
-                                </div>
-                            </div>
-                            <div class='grid summary'>
-                                <img src='assets/img/tesda.jpg'>
-                                <div>
-                                    <p class='text-small-gray' style='margin-bottom:4px;'>CERTIFIED NC-II HOLDER</p>
-                                    <h2>Computer System Servicing</h2>
-                                    <p class='text-small-gray'>Obtained December 2018</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">Graeme Xyber Pastoril</h1>
+      <h2>(cyboryan)</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
         </div>
-        <!-- binaybayon -->
-        <div class='backgroundBinaybayon'>
-            <div id='binaybayon' class='table marginCenter'>
-                <div class='vertical-center' style='padding:36px'>
-                    <h2>12th Binaybayon Festival Coverage</h2>
-                    <iframe style='width:100%;height:75vh;' src="https://www.youtube.com/embed/videoseries?list=PLDBpHzkbzA7Vq1wQQqErkz6YnwNc09Yi_" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-            </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">Web Developer - Vlogger - Filmmaker</p>
+
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section  mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-secondary text-uppercase text-white">About</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
         </div>
-        
-        <!-- services offered -->
-        <div class='backgroundServices'>
-            <div class='marginCenter block'>
-                <div id='services-header' class='grid'>
-                    <h2>SERVICES OFFERED</h2>
-                    <a href='https://www.facebook.com/book/cyboryan.official' target=_blank>
-                        <p class='section-header-button'>Book Now</p>
-                    </a>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">A Freshman Computer Science Student of Visayas State University. On the journey to contribute and make things easier to the community with the help of web and technology while sharing positivity through vlogging and filmmaking. </p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">Knowledgable to Filmmaking, Web Development (HTML, CSS, PHP, MySQL), Software-Related Computer Troubleshooting and a Certified NC-II Holder for Computer System Servicing.</p>
+        </div>
+      </div>
+
+      <!-- About Section Button // Will work out on this ;> -->
+      <!--<div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-primary" href="https://startbootstrap.com/themes/freelancer/">
+          <i class="fas fa-download mr-2 text-primary"></i>
+          Free Download!
+        </a>
+      </div>-->
+
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="page-section bg-primary text-white portfolio" id="portfolio">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase mb-0">Portfolio</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/electsys.png" alt="ElectSys">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/ehandbook.png" alt="E-Handbook">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/sfr.jpg" alt="Shortcut Virus Remover">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <!--<div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+          </div>
+        </div>-->
+
+        <!-- Portfolio Item 5 -->
+        <!--<div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+          </div>
+        </div>-->
+
+        <!-- Portfolio Item 6 -->
+        <!--<div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+          </div>
+        </div>-->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Leyte, Philippines
+            </p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/officialCyboryan">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/cyboryan">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/cyboryan">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.github.com/cyboryan">
+            <i class="fab fa-fw fa-github"></i>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About Theme</h4>
+          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; cyboryan 2019</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ElectSys</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-3" src="img/portfolio/electsys.png" alt="">
+                
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-3">To make Election as effortless as possible by managing list of voters, candidates and parties, processing electoral votes real-time as students casts their ballots, and to generate and print results upon closing the Election with few clicks.</p>
+                <p class="mb-3">This application is <b>recently implemented</b> during the SSG General Elections in Plaridel National High School last February 11, 2020.</p>
+                <p class="mb-3">Video related to this application still has to be made, but a glimpse during the development can be found <a href="https://youtu.be/Zk7B9Kiuvuc?t=548" target=_blank>here</a>. This application is not available for download.</p>
+
+                <!-- Portfolio Modal - Image List of Languages Used -->
+                <div class="mb-3" style="display:grid;margin:0 auto;width:32px;grid-gap:12px;grid-template-columns:32px 32px;">
+                  <!-- Portfolio Modal - Image -->
+                  <img class="img-fluid rounded mb-3" src="img/portfolio/php.png" alt="" style="width:32px;height:32px;">
+                </div>
+
+                <!-- Portfolio Modal - Actions -->
+                <div class="mb-3" style="display:grid;margin:0 auto;width:432px;grid-gap:12px;grid-template-columns:210px 210px;">
+                  <a>
+                    <button class="btn btn-primary" href="#" disabled>
+                      <i class="fas fa-play fa-fw"></i>
+                      Watch App in Action
+                    </button>
+                  </a>
+                  <a>
+                    <button class="btn btn-secondary" href="#" disabled>
+                      <i class="fas fa-download fa-fw"></i>
+                      Download Application
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">E-Handbook</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-3" src="img/portfolio/ehandbook.png" alt="">
+                
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-3">Serve as an information hub of the students throughout their academic pursuit while minimizing printing costs for the school and redistributable throughout Android Devices without hassle.</p>
+                <p class="mb-3">This application was released for Plaridel National High School on June 23, 2017. Made possible with <a href="https://creator.ionic.io/app/login" target=_blank>Ionic Creator</a>.</p>
+
+                <!-- Portfolio Modal - Image List of Languages Used -->
+                <div class="mb-3" style="display:grid;margin:0 auto;width:32px;grid-gap:12px;grid-template-columns:32px 32px;">
+                  <!-- Portfolio Modal - Image -->
+                  <img class="img-fluid rounded mb-3" src="img/portfolio/android.png" alt="" style="width:32px;height:32px;">
+                </div>
+
+                <!-- Portfolio Modal - Actions -->
+                <div class="mb-3" style="display:grid;margin:0 auto;width:432px;grid-gap:12px;grid-template-columns:210px 210px;">
+                  <a href="https://www.youtube.com/watch?v=d8bcjDFPthM" target="_blank">
+                    <button class="btn btn-primary" href="#">
+                      <i class="fas fa-play fa-fw"></i>
+                      Watch App in Action
+                    </button>
+                  </a>
+                  <a href="https://github.com/cyboryan/E-Handbook/releases" target="_blank">
+                    <button class="btn btn-primary" href="#">
+                      <i class="fas fa-download fa-fw"></i>
+                      Download Application
+                    </button>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Shortcut Virus Remover</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-3" src="img/portfolio/sfr.jpg" alt="">
+                
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-3">A basic Command Line Application that simplifies process on removing shortcut virus and recovering files super hidden by the said virus.</p>
+                <p class="mb-3">This application was released on April 17, 2016.</p>
+
+                <!-- Portfolio Modal - Image List of Languages Used -->
+                <div class="mb-3" style="display:grid;margin:0 auto;width:32px;grid-gap:12px;grid-template-columns:32px 32px;">
+                  <!-- Portfolio Modal - Image -->
+                  <img class="img-fluid rounded mb-3" src="img/portfolio/bat.jpg" alt="" style="width:32px;height:32px;">
+                </div>
+
+                <!-- Portfolio Modal - Actions -->
+                <div class="mb-3" style="display:grid;margin:0 auto;width:432px;grid-gap:12px;grid-template-columns:210px 210px;">
+                  <a href="https://www.youtube.com/watch?v=RBv3pjjbce8" target="_blank">
+                    <button class="btn btn-primary" href="#">
+                      <i class="fas fa-play fa-fw"></i>
+                      Watch App in Action
+                    </button>
+                  </a>
+                  <a href="https://xypower-sfr.weebly.com/" target="_blank">
+                    <button class="btn btn-primary" href="#">
+                      <i class="fas fa-download fa-fw"></i>
+                      Download Application
+                    </button>
+                  </a>
                 </div>
                 
-                <div id='services-list' class='grid'>
-                    <div class='services-content block'>
-                        <img class='services-img' src='assets/img/troubleshoot.png'>
-                        <div class='services-text'>
-                            <h3 style='text-align:center;'>Computer Troubleshoot / Repair</h3>
-                            <p style='text-align:center;'>Troubleshoot Computer Problems and resolve them. Focused on software side and Windows.</p>
-                        </div>
-                    </div>
-                    <div class='services-content block'>
-                        <img class='services-img' style='width:50%!important;margin:17% 25%!important' src='assets/img/install.png'>
-                        <div class='services-text'>
-                            <h3 style='text-align:center;'>Computer Performance Boost</h3>
-                            <p style='text-align:center;'>Thorough clean or resetting of system to ensure it reaches its optimum performance.</p>
-                        </div>
-                    </div>
-                    <div class='services-content block'>
-                        <img class='services-img' style='width:50%!important;margin:17% 25%!important' src='assets/img/account.png'>
-                        <div class='services-text'>
-                            <h3 style='text-align:center;'>Account Retrieval Assistance</h3>
-                            <p style='text-align:center;'>Assists on retrieving your hacked accounts. Depending on the situation, retrieval isn't 100% guarranted.</p>
-                        </div>
-                    </div>
-                </div>
-                
+              </div>
             </div>
+          </div>
         </div>
-        
-        <!-- portfolio -->
-        <div class='backgroundPortfolio'>
-            <div class='marginCenter block'>
-                <h2>PROGRAMMING PORTFOLIO</h2>
-                <span class='span-16px'></span>
-                <div class='grid' id='portfolio-list'>
-                    <!-- ElectSys -->
-                    <div class='portfolio-content block'>
-                        <img class='portfolio-img' src='assets/img/electsys.png'>
-                        <div class='portfolio-text'>
-                            <div class='portfolio-text-header grid'>
-                                <h3>ElectSys</h3>
-                                <img class='portfolio-icon' src='assets/img/php.png'>
-                            </div>
-                            <p>An Automated Election System specifically made for Supreme Student Government Elections in Secondary Schools.</p>
-                            
-                        </div>
-                        <ul class='portfolio-menu'>
-                            <a href='javascript:void(0)'>
-                                <li class='portfolio-menu-button'>
-                                    <img src='assets/img/soon.png'>
-                                    <span style='margin-top:8px'>Under Development</span>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                    <!-- EaseForm -->
-                    <div class='portfolio-content block'>
-                        <img class='portfolio-img' src='assets/img/easeform.png'>
-                        <div class='portfolio-text'>
-                            <div class='portfolio-text-header grid'>
-                                <h3>EaseForm</h3>
-                                <img class='portfolio-icon' src='assets/img/php.png'>
-                            </div>
-                            <p>An application that prints encoded filled-up form into its corressponding paper format.</p>
-                        </div>
-                        <ul class='portfolio-menu'>
-                            <a href='javascript:void(0)'>
-                                <li class='portfolio-menu-button'>
-                                    <img src='assets/img/soon.png'>
-                                    <span style='margin-top:8px'>Under Development</span>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                    <!-- E-Handbook -->
-                    <div class='portfolio-content block'>
-                        <img class='portfolio-img' src='assets/img/ehandbook.png'>
-                        <div class='portfolio-text'>
-                            <div class='portfolio-text-header grid'>
-                                <h3>E-Handbook</h3>
-                                <img class='portfolio-icon' src='assets/img/android.png'>
-                            </div>
-                            <p>Known fully as Student's E-Handbook, an Android application containing information about the school, its rules and regulations and student organizations.</p>
-                        </div>
-                        <ul class='portfolio-menu'>
-                            <a href='https://www.youtube.com/watch?v=d8bcjDFPthM' target=_blank>
-                                <li class='portfolio-menu-button'>
-                                    <img src='assets/img/play.jpg'>
-                                    <span style='margin-top:8px'>Watch App in Action</span>
-                                </li>
-                            </a>
-                            <a href='https://github.com/cyboryan/E-Handbook/releases' target=_blank>
-                                <li class='portfolio-menu-button'>
-                                    <img src='assets/img/download.png'>
-                                    <span style='margin-top:8px'>Download Application</span>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                    <!-- Shortcut Virus Remover -->
-                    <div class='portfolio-content block'>
-                        <img class='portfolio-img' src='assets/img/sfr.jpg'>
-                        <div class='portfolio-text'>
-                            <div class='portfolio-text-header grid'>
-                                <h3 style='font-size:23px!important;margin-top:3px;margin-bottom:14px;'>Shortcut Virus Remover</h3>
-                                <img class='portfolio-icon' src='assets/img/bat.jpg'>
-                            </div>
-                            <p>An application that removes the shortcut and revert affected files from being super hidden by the virus.</p>
-                        </div>
-                        <ul class='portfolio-menu'>
-                            <a href='https://www.youtube.com/watch?v=RBv3pjjbce8' target=_blank>
-                                <li class='portfolio-menu-button'>
-                                    <img src='assets/img/play.jpg'>
-                                    <span style='margin-top:8px'>Watch App in Action</span>
-                                </li>
-                            </a>
-                            <a href='https://xypower-sfr.weebly.com' target=_blank>
-                                <li class='portfolio-menu-button'>
-                                    <img src='assets/img/download.png'>
-                                    <span style='margin-top:8px'>Download Application</span>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <span class='span-16px'></span>
-                <p style='color:white;'>And two more projects undisclosed at the moment. More information will be shown here as the development progresses.</p s>
-                <span class='span-16px'></span>
-            </div>
-        </div>
-    </body>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
+
 </html>
