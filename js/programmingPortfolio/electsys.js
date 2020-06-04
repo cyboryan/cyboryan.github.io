@@ -9,7 +9,7 @@ $("#electsys").click(function() {
     /**
      * Add Portfolio Article Content
      */
-    $("#programmingPortfolioContent").append($('<p>')
+    $("#portfolioContent").append($('<p>')
         .attr('class', 'mb-3')
         .append('ElectSys, a short term for Election System, is a web application that makes managing Supreme Student Government Elections effortless as possible. It includes features such as managing list of voters, candidates and parties; processing electoral votes real-time as students cast their electronic ballots; and to generate and print election results upon closing the Election in few clicks.')
     )

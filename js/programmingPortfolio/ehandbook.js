@@ -9,7 +9,7 @@ $("#ehandbook").click(function() {
     /**
      * Add Portfolio Article Content
      */
-    $("#programmingPortfolioContent").append($('<p>')
+    $("#portfolioContent").append($('<p>')
         .attr('class', 'mb-3')
         .append("E-Handbook is a short term for Student's Electronic Handbook serves as an information hub of the students, parents, teachers and stakeholders concerned about Plaridel National High School, its policies, clubs and activities while minimizing printing costs for the school and redistributable throughout Android Devices without hassle.")
     )

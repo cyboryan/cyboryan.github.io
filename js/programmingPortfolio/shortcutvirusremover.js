@@ -9,7 +9,7 @@ $("#shortcutvirusremover").click(function() {
     /**
      * Add Portfolio Article Content
      */
-    $("#programmingPortfolioContent").append($('<p>')
+    $("#portfolioContent").append($('<p>')
         .attr('class', 'mb-3')
         .append('A simple Microsoft Windows Batch Project that simplifies the removal of shortcut virus on modern flash drives and recovers files hidden by the virus. You simply add your drive letter where your flash drive is located then a simple script will remove it for you.')
     )
@@ -24,4 +24,6 @@ $("#shortcutvirusremover").click(function() {
     
     addModalButtonLink('watch', 'https://www.youtube.com/watch?v=RBv3pjjbce8');
     addModalButtonLink('github', 'shortcutvirusremover');
+
+    printEmptySpace();
 });
