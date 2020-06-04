@@ -1,6 +1,6 @@
 function clearProgrammingModal()
 {
-    $("#programmingPortfolioContent").text('');
+    $("#portfolioContent").text('');
 }
 
 /**
@@ -8,10 +8,10 @@ function clearProgrammingModal()
  */
 function printTitle(title)
 {
-    $("#programmingPortfolioContent")
+    $("#portfolioContent")
     .append($('<h2>')
         .attr('class','portfolio-modal-title text-secondary text-uppercase mb-0')
-        .text('ElectSys')
+        .text(title)
     );
 }
 
@@ -20,7 +20,7 @@ function printTitle(title)
  */
 function printIconDivider()
 {
-    $("#programmingPortfolioContent")
+    $("#portfolioContent")
     .append($('<div>')
         .attr('class', 'divider-custom')
         .append($('<div>')
@@ -43,7 +43,7 @@ function printIconDivider()
  */
 function printPhoto(imgSource)
 {
-    $("#programmingPortfolioContent").append($('<img>')
+    $("#portfolioContent").append($('<img>')
         .attr('class','img-fluid rounded mb-3')
         .attr('src', imgSource)
     )
@@ -54,7 +54,7 @@ function printPhoto(imgSource)
  */
 function printProgrammingLanguagePhotos(...langArray)
 {
-    var prog = $("#programmingPortfolioContent");
+    var prog = $("#portfolioContent");
     prog.append($("<div>")
         .attr('class', 'mb-3 container')
         .append($('<div>')
@@ -107,7 +107,7 @@ function printProgrammingLanguagePhotos(...langArray)
  */
 function printProgrammingModalButtons(...actions)
 {
-    var prog = $("#programmingPortfolioContent");
+    var prog = $("#portfolioContent");
     prog.append($("<div>")
         .attr('class', 'mb-3 container')
         .append($('<div>')
@@ -196,4 +196,26 @@ function addModalButtonLink(action, link)
         $('#progGithub button').removeAttr('disabled')
         $('#progGithub').attr('href', 'https://github.com/cyboryan/' + link)
     }
+}
+
+/**
+ * 
+ */
+function printEmbedYouTube(id)
+{
+    var prog = $("#portfolioContent");
+    prog.append($("<iframe>")
+        .attr('class', 'mb-3')
+        .attr('src', 'https://www.youtube.com/embed/' + id)
+        .attr('frameborder', '0')
+        .attr('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture')
+        .attr('allowfullscreen', '')
+        .attr('style', 'width:100%;height:50%;display:block')
+    );
+}
+
+function printEmptySpace()
+{
+    var prog = $("#portfolioContent");
+    for(i = 0; i < 10; i++) prog.append($("<br>"));
 }
