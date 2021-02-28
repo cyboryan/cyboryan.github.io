@@ -16,22 +16,13 @@ $("#electsys").click(function() {
 
     .append($('<p>')
         .attr('class', 'mb-3')
-        .append('This application is <b>recently implemented</b> during the SSG General Elections in Plaridel National High School last February 11, 2020.')
+        .append('This application is <b>recently implemented</b> during the SSG General Elections in Plaridel National High School last February 11, 2020. Development is temporarily discontinued due to the COVID-19 Pandemic, making the system ineffective with the implementation of distance modular learning.')
     )
 
     .append($('<p>')
         .attr('class', 'mb-3')
-        .append('Video related to this application still has to be made, but a glimpse during the development can be found ')
-        .append($('<a>')
-            .attr('href', 'https://youtu.be/Zk7B9Kiuvuc?t=548')
-            .attr('target', '_blank')
-            .text('here')
-        )
-        .append('. This application currently is not available for download.')
+        .append('. This application is not available for download, but a demo version will be posted soon.')
     );
 
     printProgrammingLanguagePhotos('php');
-    printProgrammingModalButtons('watch');
-    
-    addModalButtonLink('watch', 'https://youtu.be/Zk7B9Kiuvuc?t=548');
 });
