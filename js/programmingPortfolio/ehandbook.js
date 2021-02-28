@@ -31,8 +31,7 @@ $("#ehandbook").click(function() {
     );
 
     printProgrammingLanguagePhotos('android');
-    printProgrammingModalButtons('watch', 'github');
+    printProgrammingModalButtons('github');
     
-    addModalButtonLink('watch', 'https://www.youtube.com/watch?v=d8bcjDFPthM');
     addModalButtonLink('github', 'E-Handbook');
 });
