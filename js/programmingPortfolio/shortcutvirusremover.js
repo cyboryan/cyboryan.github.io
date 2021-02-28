@@ -4,7 +4,7 @@ $("#shortcutvirusremover").click(function() {
 
     printTitle('Shortcut Virus Remover');
     printIconDivider();
-    printPhoto('img/portfolio/sfr.jpg');
+    printPhoto('img/portfolio/sfr.png');
 
     /**
      * Add Portfolio Article Content
